@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Betting Dapp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <div class="card text-light bg-dark p-4 " style="width: 100%; text-align:center; ">
+    <H1>Betting Dapp</H1>
+    <div class="mt-3">
+      Wallet Connected : <small class="
+              bg-light
+              text-muted text-lowercase
+              p-2
+              px-3
+              rounded-pill
+            " id="userAddress">0x..add-here</small>
+      
+    </div>
+    <div class="mt-3">
+    <button class="
+          bg-light
+          text-muted text-lowercase
+          p-2
+          px-3
+          rounded-pill
+        " onclick="connectWallet()">Connect Wallet</button></div>
+  </div><br>
+
+  <table class="zui-table">
+    <tr>
+      <th>TEAM A</th>
+      <th>TEAM B</th>
+    </tr>
+    <tr>
+      <td id="totalA">Total Amount : 0 Eth</td>
+      <td id="totalB">Total Amount : 0 Eth</td>
+    </tr>
+    <tr>
+      <td>Enter an amount to bet</td>
+      <td>Enter an amount to bet</td>
+    </tr>
+    <tr>
+      <td><input type="number" id="teamAbet"></td>
+      <td><input type="number" id="teamBbet"></td>
+    </tr>
+    <tr>
+      <td> <button class="extra" onclick="betA()">BET</button></td>
+      <td> <button class="extra" onclick="betB()">BET</button></td>
+    </tr>
+    <tr>
+      <td> <button class="extra" onclick="winA()">Make this team win</button></td>
+      <td> <button class="extra" onclick="winB()">Make this team win</button></td>
+    </tr>
+  </table>
+
+</body>
+<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+<script src="./script/app.js"></script>
+
+</html>
