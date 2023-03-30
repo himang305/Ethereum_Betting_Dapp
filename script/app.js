@@ -20,8 +20,8 @@ async function connectWallet(){
   let totalB = await nftContract.totalBetsTwo();
   totalB = ethers.utils.formatUnits(totalB, "ether");
 
-  document.getElementById("totalA").innerHTML = "Total Amount : "+totalA +"Eth";
-  document.getElementById("totalB").innerHTML = "Total Amount : "+totalB +"Eth";
+  document.getElementById("totalA").innerHTML = "Total Amount : "+totalA +" BNB";
+  document.getElementById("totalB").innerHTML = "Total Amount : "+totalB +" BNB";
 
 }
 
