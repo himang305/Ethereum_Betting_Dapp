@@ -12,7 +12,7 @@
     background-image: url('./bunny.jpg');
     background-size: cover;
     /* background-position: center center; */
-    background-repeat: no-repeat;
+    background-repeat: space repeat;
     position: relative;
     /* z-index: 1; */
   }
