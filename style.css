@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+
+  
+  body {
+    opacity: 1;
+    position: relative;
+    background-image: url('./bunny.jpg');
+    background-size: cover;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    position: relative;
+    /* z-index: 1; */
+  }
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -16,25 +29,104 @@ body {
             rounded-pill
 }
 
-.zui-table {
-    border: solid 1px #DDEEEE;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font: normal 23px Arial, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-}
-.zui-table thead th {
-    background-color: #DDEFEF;
-    border: solid 1px #DDEEEE;
-    color: #336B6B;
+/* Set table styles */
+table {
+
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 20px;
+			/* overflow: hidden; */
+    
+  }
+
+  tbody{
+    display: block;
+    overflow: auto; 
+    z-index: 1;
+    margin-top: 30%;
+  }
+
+  
+  
+  /* Style table headers */
+  th {
+    background-color: #333;
+    color: #f0853d;
+    font-weight: bold;
+    text-align: center;
     padding: 10px;
-    text-align: left;
-    text-shadow: 1px 1px 1px #fff;
-}
-.zui-table tbody td {
-    border: solid 1px #DDEEEE;
+    border: 1px solid #f0853d;
+  }
+  
+  /* Style table cells */
+  td {
+    padding: 10px;
+    border: 1px solid #040202;
+    text-align: center;
+  }
+  
+  /* Alternate row colors */
+  /* tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  } */
+  
+  /* Set column widths */
+  td:nth-child(1), th:nth-child(1) {
+    width: 30%;
+    font-weight: bolder;
+
+  }
+  
+  td:nth-child(2), th:nth-child(2) {
+    width: 30%;
+    font-weight: bolder;
+
+  }
+  td:nth-child(3), th:nth-child(3) {
+    width: 30%;
+    font-weight: bolder;
+
+  }
+  
+
+  .button {
+    display: inline-block;
+    border: none;
+    background-image: linear-gradient(to bottom, #f9f9f6, #f8f7f5);
     color: #333;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #e89c22;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 0 #e6851e;
+    background-image: linear-gradient(to bottom, #f9f6f4, #d2a03e);
+  }
+
+
+  .input-box {
     padding: 10px;
-    text-shadow: 1px 1px 1px #fff;
-}
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.5s ease-in-out;
+  }
+  .input-box:focus {
+    border-color: #FF5722;
+  }
+
+
+  

@@ -17,29 +17,23 @@
 
 <body>
 
-  <div class="card text-light bg-dark p-4 " style="width: 100%; text-align:center; ">
-    <H1>Betting Dapp</H1>
-    <div class="mt-3">
-      Wallet Connected : <small class="
+    <div class="mt-3" style="right: 50px;
+    position: absolute;">
+          <button class="button" onclick="connectWallet()">Connect Wallet</button><br><br>
+
+      <small class="
               bg-light
               text-muted text-lowercase
               p-2
               px-3
               rounded-pill
             " id="userAddress">0x..add-here</small>
-      
-    </div>
-    <div class="mt-3">
-    <button class="
-          bg-light
-          text-muted text-lowercase
-          p-2
-          px-3
-          rounded-pill
-        " onclick="connectWallet()">Connect Wallet</button></div>
-  </div><br>
 
-  <table class="zui-table">
+    </div>
+  <br>
+
+  <table class="zui" >
+    <tbody>
     <tr>
       <th>TEAM A</th>
       <th>TEAM B</th>
@@ -53,17 +47,15 @@
       <td>Enter an amount to bet</td>
     </tr>
     <tr>
-      <td><input type="number" id="teamAbet"></td>
-      <td><input type="number" id="teamBbet"></td>
+      <td><input class="input-box" type="number" id="teamAbet"></td>
+      <td><input class="input-box" type="number" id="teamBbet"></td>
     </tr>
     <tr>
-      <td> <button class="extra" onclick="betA()">BET</button></td>
-      <td> <button class="extra" onclick="betB()">BET</button></td>
+      <td> <button class="button" onclick="betA()">BET</button></td>
+      <td> <button class="button" onclick="betB()">BET</button></td>
     </tr>
-    <tr>
-      <td> <button class="extra" onclick="winA()">Make this team win</button></td>
-      <td> <button class="extra" onclick="winB()">Make this team win</button></td>
-    </tr>
+
+    </tbody>
   </table>
 
 </body>
