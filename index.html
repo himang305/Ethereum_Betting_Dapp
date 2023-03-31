@@ -19,7 +19,7 @@
 
     <div class="mt-3" style="right: 50px;
     position: absolute;">
-          <button class="button" onclick="connectWallet()">Connect Wallet</button>
+          <button id="walletbutton" class="button" onclick="connectWallet()">Connect Wallet</button>
 
       <small class="
               bg-light
@@ -57,9 +57,16 @@
 
     </tbody>
   </table>
-
 </body>
-<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+<!-- <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script> -->
+
+
+<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+<!-- <script type="text/javascript" src="https://unpkg.com/evm-chains/lib/index.js"></script> -->
+<script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+
 <script src="./script/app.js"></script>
+
 
 </html>
