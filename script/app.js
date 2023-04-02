@@ -4,8 +4,8 @@
 
 
 const NFT = {
- // address: "0x8aad10591735dc758dd8059ac1aeb4758994d55b",
- address: "0xEC3503676BEb1d7cf7152E2c0b33818A6713756a",
+ address: "0x8aad10591735dc758dd8059ac1aeb4758994d55b",
+//  address: "0xEC3503676BEb1d7cf7152E2c0b33818A6713756a",
  // address: "0xaa0E1E69fc467221b5128F4942284b1bDdbeF7ED",
  abi: [{"constant":true,"inputs":[{"name":"player","type":"address"}],"name":"checkPlayerExists","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"AmountOne","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"playerInfo","outputs":[{"name":"amountBet","type":"uint256"},{"name":"teamSelected","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalBetsTwo","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"AmountTwo","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"teamWinner","type":"uint16"}],"name":"distributePrizes","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_teamSelected","type":"uint8"}],"name":"Bet","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"totalBetsOne","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"minimumBet","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"players","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
 };
@@ -34,13 +34,13 @@ function connectWallet() {
      package: WalletConnectProvider,
      options: {
        rpc: {
-         97: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+        56: 'https://bsc-dataseed.binance.org', 
        },
-       network: "binance-testnet",
+        network: "binance",
      },
      // options: {
      // //   rpc: {
-     // //   //  97: 'https://endpoints.omniatech.io/v1/bsc/testnet/public'
+        //  97: "https://data-seed-prebsc-1-s1.binance.org:8545/",
      // //    56: 'https://bsc-dataseed.binance.org'
      // // },
      // // // network: 'binance',
